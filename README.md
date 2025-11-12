@@ -9,7 +9,7 @@
 - [数据库作业](#数据库作业)
   - [第一次编程作业](#第一次编程作业)
     - [第一次编程代码](./project1/bustub_initial)
-    - [第一次编程测试pass图片](./project1/bustub_initial)
+    - [第一次编程测试passed图片](./project1/bustub_initial)
     - [extendible\_hash\_test](#extendible_hash_table_test)
     - [lru\_replacer\_test](#lru_k_replacer_test)
     - [buffer\_pool\_manager\_test](#buffer_pool_manager_instance_test)
