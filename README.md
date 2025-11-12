@@ -29,7 +29,7 @@
 
 ### buffer_pool_manager_test
 
-![buffer_pool_manager_test](./project1/result_images/buffer_pool_instance_manager_test.png)
+![buffer_pool_manager_test](./project1/result_images/buffer_pool_manager_instance_test.png)
 
 
 
