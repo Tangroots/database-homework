@@ -20,17 +20,17 @@
 
 ### extendible_hash_table_test
 
-![extendible_hash_test](./project1/result_images/extendible_hash_table_test.png)
+![extendible_hash_table_test](./project1/result_images/extendible_hash_table_test.png)
 
 
 ### lru_k_replacer_test
 
-![lru_replacer_test](./project1/result_images/lru_k_replacer_test.png)
+![lru_k_replacer_test](./project1/result_images/lru_k_replacer_test.png)
 
 
 ### buffer_pool_manager_instance_test
 
-![buffer_pool_manager_test](./project1/result_images/buffer_pool_manager_instance_test.png)
+![buffer_pool_manager_instance_test](./project1/result_images/buffer_pool_manager_instance_test.png)
 
 
 
