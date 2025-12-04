@@ -1,0 +1,26 @@
+// .devcontainer/devcontainer.json
+{
+    "name": "Bustub",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "context": "."
+    },
+    "mounts": [
+        "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached"
+    ],
+    "workspaceFolder": "/workspace",
+    "remoteUser": "root",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-vscode.cpptools", // C/C++ 核心工具
+                "llvm-vs-code-extensions.vscode-clangd", // 或者 clangd
+                "cmake-tools.cmake-tools", // CMake 支持
+                "twxs.cmake" // CMake 语法高亮
+            ]
+        },
+        "settings": {
+            "terminal.integrated.shell.linux": "/bin/bash"
+        }
+    }
+}
