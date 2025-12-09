@@ -48,8 +48,6 @@
 ![b_plus_tree_delete_test](./project2/result_images/b_plus_tree_delete_test.png)
 
 
-![b_plus_tree_delete_test](./project2/result_images/b_plus_tree_contention_test.png)
-
 ### b_plus_tree_concurrent_test
 
 ![b_plus_tree_concurrent_test](./project2/result_images/b_plus_tree_concurrent_test.png)
