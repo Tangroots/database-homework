@@ -1,0 +1,100 @@
+oot@72315e328c9a:/workspace/build# make clean && make b_plus_tree_insert_test -j4
+[  0%] Building C object third_party/libfort/lib/CMakeFiles/fort.dir/fort.c.o
+[  0%] Building CXX object src/buffer/CMakeFiles/bustub_buffer.dir/buffer_pool_manager_instance.cpp.o
+[  1%] Building CXX object src/binder/statement/CMakeFiles/bustub_statement.dir/create_statement.cpp.o
+[  3%] Building CXX object src/binder/CMakeFiles/bustub_binder.dir/binder.cpp.o
+[  4%] Linking C static library ../../../lib/libfort.a
+/usr/bin/ar qc ../../../lib/libfort.a CMakeFiles/fort.dir/fort.c.o
+/usr/bin/ranlib ../../../lib/libfort.a
+[  4%] Built target fort
+[  4%] Building CXX object src/binder/CMakeFiles/bustub_binder.dir/bind_create.cpp.o
+[  6%] Building CXX object src/buffer/CMakeFiles/bustub_buffer.dir/clock_replacer.cpp.o
+[  7%] Building CXX object src/binder/statement/CMakeFiles/bustub_statement.dir/delete_statement.cpp.o
+[  7%] Building CXX object src/buffer/CMakeFiles/bustub_buffer.dir/lru_replacer.cpp.o
+[  9%] Building CXX object src/buffer/CMakeFiles/bustub_buffer.dir/lru_k_replacer.cpp.o
+[ 10%] Building CXX object src/binder/CMakeFiles/bustub_binder.dir/bind_insert.cpp.o
+[ 10%] Built target bustub_buffer
+[ 10%] Building CXX object src/catalog/CMakeFiles/bustub_catalog.dir/column.cpp.o
+[ 10%] Building CXX object src/binder/statement/CMakeFiles/bustub_statement.dir/explain_statement.cpp.o
+[ 12%] Building CXX object src/catalog/CMakeFiles/bustub_catalog.dir/table_generator.cpp.o
+[ 12%] Building CXX object src/binder/CMakeFiles/bustub_binder.dir/bind_select.cpp.o
+[ 13%] Building CXX object src/binder/CMakeFiles/bustub_binder.dir/bind_variable.cpp.o
+[ 15%] Building CXX object src/binder/statement/CMakeFiles/bustub_statement.dir/index_statement.cpp.o
+[ 15%] Building CXX object src/catalog/CMakeFiles/bustub_catalog.dir/schema.cpp.o
+[ 15%] Building CXX object src/binder/CMakeFiles/bustub_binder.dir/bound_statement.cpp.o
+[ 15%] Built target bustub_catalog
+[ 16%] Building CXX object src/common/CMakeFiles/bustub_common.dir/bustub_instance.cpp.o
+[ 16%] Building CXX object src/binder/statement/CMakeFiles/bustub_statement.dir/insert_statement.cpp.o
+[ 18%] Building CXX object src/binder/CMakeFiles/bustub_binder.dir/fmt_impl.cpp.o
+[ 19%] Building CXX object src/binder/CMakeFiles/bustub_binder.dir/keyword_helper.cpp.o
+[ 21%] Building CXX object src/binder/statement/CMakeFiles/bustub_statement.dir/select_statement.cpp.o
+[ 21%] Building CXX object src/binder/CMakeFiles/bustub_binder.dir/node_tag_to_string.cpp.o
+[ 22%] Building CXX object src/binder/CMakeFiles/bustub_binder.dir/transformer.cpp.o
+[ 22%] Building CXX object src/binder/statement/CMakeFiles/bustub_statement.dir/update_statement.cpp.o
+[ 22%] Building CXX object src/common/CMakeFiles/bustub_common.dir/config.cpp.o
+[ 24%] Building CXX object src/common/CMakeFiles/bustub_common.dir/util/string_util.cpp.o
+[ 24%] Building CXX object src/concurrency/CMakeFiles/bustub_concurrency.dir/lock_manager.cpp.o
+[ 24%] Built target bustub_statement
+[ 24%] Building CXX object src/container/disk/hash/CMakeFiles/bustub_container_disk_hash.dir/disk_extendible_hash_table.cpp.o
+[ 24%] Built target bustub_binder
+[ 24%] Building CXX object src/container/hash/CMakeFiles/bustub_container_hash.dir/extendible_hash_table.cpp.o
+[ 24%] Built target bustub_common
+[ 25%] Building CXX object src/concurrency/CMakeFiles/bustub_concurrency.dir/transaction_manager.cpp.o
+[ 27%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/aggregation_executor.cpp.o
+[ 27%] Built target bustub_container_hash
+[ 27%] Building CXX object src/recovery/CMakeFiles/bustub_recovery.dir/checkpoint_manager.cpp.o
+[ 28%] Building CXX object src/container/disk/hash/CMakeFiles/bustub_container_disk_hash.dir/linear_probe_hash_table.cpp.o
+[ 28%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/delete_executor.cpp.o
+[ 28%] Built target bustub_container_disk_hash
+[ 30%] Building CXX object src/storage/disk/CMakeFiles/bustub_storage_disk.dir/disk_manager.cpp.o
+[ 31%] Building CXX object src/recovery/CMakeFiles/bustub_recovery.dir/log_manager.cpp.o
+[ 31%] Built target bustub_concurrency
+[ 33%] Building CXX object src/storage/index/CMakeFiles/bustub_storage_index.dir/b_plus_tree_index.cpp.o
+[ 33%] Building CXX object src/storage/disk/CMakeFiles/bustub_storage_disk.dir/disk_manager_memory.cpp.o
+[ 33%] Building CXX object src/recovery/CMakeFiles/bustub_recovery.dir/log_recovery.cpp.o
+[ 33%] Built target bustub_storage_disk
+[ 33%] Building CXX object src/storage/page/CMakeFiles/bustub_storage_page.dir/b_plus_tree_internal_page.cpp.o
+[ 34%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/executor_factory.cpp.o
+[ 34%] Building CXX object src/storage/index/CMakeFiles/bustub_storage_index.dir/b_plus_tree.cpp.o
+[ 34%] Built target bustub_recovery
+[ 36%] Building CXX object src/storage/table/CMakeFiles/bustub_storage_table.dir/table_heap.cpp.o
+[ 37%] Building CXX object src/storage/page/CMakeFiles/bustub_storage_page.dir/b_plus_tree_leaf_page.cpp.o
+/workspace/src/storage/index/b_plus_tree.cpp: In member function 'void bustub::BPlusTree<KeyType, ValueType, KeyComparator>::InsertIntoParent(bustub::BPlusTreePage*, const KeyType&, bustub::BPlusTreePage*, bustub::Transaction*)':
+/workspace/src/storage/index/b_plus_tree.cpp:615:87: error: 'class bustub::BPlusTreePage' has no member named 'GetPageType'; did you mean 'SetPageType'?
+  615 |   std::cout << "InsertIntoParent: parent page type=" << static_cast<int>(parent_base->GetPageType()) << std::endl;
+      |                                                                                       ^~~~~~~~~~~
+      |                                                                                       SetPageType
+At global scope:
+cc1plus: note: unrecognized command-line option '-Wno-dangling-reference' may have been intended to silence earlier diagnostics
+make[3]: *** [src/storage/index/CMakeFiles/bustub_storage_index.dir/build.make:90: src/storage/index/CMakeFiles/bustub_storage_index.dir/b_plus_tree.cpp.o] Error 1
+make[2]: *** [CMakeFiles/Makefile2:1615: src/storage/index/CMakeFiles/bustub_storage_index.dir/all] Error 2
+make[2]: *** Waiting for unfinished jobs....
+[ 37%] Building CXX object src/storage/page/CMakeFiles/bustub_storage_page.dir/b_plus_tree_page.cpp.o
+[ 39%] Building CXX object src/storage/page/CMakeFiles/bustub_storage_page.dir/hash_table_block_page.cpp.o
+[ 39%] Building CXX object src/storage/table/CMakeFiles/bustub_storage_table.dir/table_iterator.cpp.o
+[ 39%] Building CXX object src/storage/page/CMakeFiles/bustub_storage_page.dir/hash_table_bucket_page.cpp.o
+[ 40%] Building CXX object src/storage/page/CMakeFiles/bustub_storage_page.dir/hash_table_directory_page.cpp.o
+[ 42%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/filter_executor.cpp.o
+[ 42%] Building CXX object src/storage/page/CMakeFiles/bustub_storage_page.dir/header_page.cpp.o
+[ 43%] Building CXX object src/storage/page/CMakeFiles/bustub_storage_page.dir/table_page.cpp.o
+[ 45%] Building CXX object src/storage/table/CMakeFiles/bustub_storage_table.dir/tuple.cpp.o
+[ 45%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/fmt_impl.cpp.o
+[ 45%] Built target bustub_storage_table
+[ 46%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/hash_join_executor.cpp.o
+[ 46%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/index_scan_executor.cpp.o
+[ 46%] Built target bustub_storage_page
+[ 48%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/insert_executor.cpp.o
+[ 48%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/limit_executor.cpp.o
+[ 50%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/mock_scan_executor.cpp.o
+[ 50%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/nested_index_join_executor.cpp.o
+[ 51%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/nested_loop_join_executor.cpp.o
+[ 51%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/plan_node.cpp.o
+[ 53%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/projection_executor.cpp.o
+[ 53%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/seq_scan_executor.cpp.o
+[ 54%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/sort_executor.cpp.o
+[ 54%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/topn_executor.cpp.o
+[ 56%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/update_executor.cpp.o
+[ 56%] Building CXX object src/execution/CMakeFiles/bustub_execution.dir/values_executor.cpp.o
+[ 56%] Built target bustub_execution
+make[1]: *** [CMakeFiles/Makefile2:2956: test/CMakeFiles/b_plus_tree_insert_test.dir/rule] Error 2
+make: *** [Makefile:953: b_plus_tree_insert_test] Error 2

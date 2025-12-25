@@ -40,7 +40,7 @@ class BPlusTree {
 
  public:
   explicit BPlusTree(std::string name, BufferPoolManager *buffer_pool_manager, const KeyComparator &comparator,
-                     int leaf_max_size = LEAF_PAGE_SIZE, int internal_max_size = INTERNAL_PAGE_SIZE);
+                     int leaf_max_size = -1, int internal_max_size = -1);
 
   // Returns true if this B+ tree has no keys and values.
   auto IsEmpty() const -> bool;
@@ -76,6 +76,22 @@ class BPlusTree {
 
  private:
   void UpdateRootPageId(int insert_record = 0);
+  
+  /* Helper functions for tree operations */
+  auto FindLeafPage(const KeyType &key, bool leftMost = false) -> Page *;
+  auto StartNewTree(const KeyType &key, const ValueType &value) -> void;
+  auto InsertIntoLeaf(const KeyType &key, const ValueType &value, Transaction *transaction) -> bool;
+  auto InsertIntoParent(BPlusTreePage *old_node, const KeyType &key, BPlusTreePage *new_node, Transaction *transaction) -> void;
+  auto Split(LeafPage *node) -> LeafPage *;
+  auto Split(InternalPage *node) -> InternalPage *;
+  
+  /* Helper functions for deletion */
+  auto DeleteFromLeaf(LeafPage *node, const KeyType &key) -> bool;
+  auto CoalesceOrRedistribute(BPlusTreePage *node, Transaction *transaction) -> bool;
+  auto AdjustRoot(BPlusTreePage *node) -> bool;
+  auto Redistribute(BPlusTreePage *neighbor_node, BPlusTreePage *node, InternalPage *parent, int index, bool from_left) -> void;
+  auto Coalesce(BPlusTreePage *left_node, BPlusTreePage *right_node, InternalPage *parent, int index, Transaction *transaction) -> bool;
+  auto DeleteFromInternal(InternalPage *node, int index) -> void;
 
   /* Debug Routines for FREE!! */
   void ToGraph(BPlusTreePage *page, BufferPoolManager *bpm, std::ofstream &out) const;
